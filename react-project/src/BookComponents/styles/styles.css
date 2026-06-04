@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: hsl(168, 51%, 83%);
 }
 
 .head-title {
@@ -7,11 +7,81 @@ body {
     text-align: center;
 }
 
-.book-image{
-    display: flex;
+.book-image img {
+    height: 400px;
+    width: 250px;
 }
 
-.image {
-    width: 200px;
-    height: auto;
+.book-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.book-item {    
+    display: inline-block;
+    margin-left: 30px;
+    background-color: white;
+    padding: 20px;
+}
+
+.book-button-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.book-input {
+    max-width: 420px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-family: Arial, sans-serif;
+}
+
+.book-input input {
+    padding: 14px 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #f9fafb;
+}
+
+.book-input input:focus {
+    border-color: #4f46e5;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+.book-input button {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #4f46e5;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.book-input button:hover {
+    background: #4338ca;
+}
+
+.book-input button:active {
+    transform: scale(0.98);
 }
